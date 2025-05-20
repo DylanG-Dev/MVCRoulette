@@ -60,7 +60,6 @@ class testJoueur {
         echo "Test de mise à jour de l'argent d'un utilisateur\n";
         $this->joueurDAO->majUtilisateur($id_joueur, $argent);
 
-        // Check if the user's amount was updated in the database
         $sql = "SELECT argent FROM roulette_joueur WHERE identifiant = :id_joueur";
         $stmt = $this->connectBDD->getBdd()->prepare($sql);
         $stmt->execute(['id_joueur' => $id_joueur]);
