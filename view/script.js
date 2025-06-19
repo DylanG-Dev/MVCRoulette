@@ -1,8 +1,3 @@
-/*
- * TP Roulette
- * script.js
- * Bastien Thouverez
- */
 jQuery(document).ready(function($) {
 	var jeu = 'nombre'; // ou 'parite'
 	
